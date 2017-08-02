@@ -3,16 +3,16 @@
 
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>intic</groupId>
-	<artifactId>intic</artifactId>
+	<groupId>jusaway</groupId>
+	<artifactId>jusaway</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 
-	<name>InTIC Advocacia</name>
-	<url>intic.com.br</url>
+	<name>JusAway Advocacia</name>
+	<url>jusaway.com.br</url>
 
 	<organization>
-		<name>InTIC</name>
-		<url>intic.com.br</url>
+		<name>JusAway</name>
+		<url>jusaway.com.br</url>
 	</organization>
 
 	<properties>
