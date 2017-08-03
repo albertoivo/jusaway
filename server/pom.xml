@@ -14,6 +14,13 @@
 		<name>JusAway</name>
 		<url>jusaway.com.br</url>
 	</organization>
+	
+	<developers>
+		<developer>
+			<name>Alberto Ivo Vieira</name>
+			<email>albertoivo@gmail.com</email>
+		</developer>
+	</developers>
 
 	<properties>
 		<maven.compiler.source>1.8</maven.compiler.source>
@@ -23,12 +30,6 @@
 	</properties>
 
 	<dependencies>
-
-		<dependency>
-			<groupId>javax</groupId>
-			<artifactId>javaee-api</artifactId>
-			<version>7.0</version>
-		</dependency>
 
 		<dependency>
 			<groupId>org.apache.commons</groupId>
@@ -68,12 +69,6 @@
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
 			<version>6.0.5</version>
-		</dependency>
-
-		<dependency>
-			<groupId>org.postgresql</groupId>
-			<artifactId>postgresql</artifactId>
-			<version>9.4.1212</version>
 		</dependency>
 
 		<!-- Tests -->

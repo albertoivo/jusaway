@@ -1,6 +1,6 @@
-CREATE DATABASE IF NOT EXISTS inticdb DEFAULT CHARACTER SET = utf8;
+CREATE DATABASE IF NOT EXISTS jusawaydb DEFAULT CHARACTER SET = utf8;
 
-USE inticdb;
+USE jusawaydb;
 
 CREATE TABLE IF NOT EXISTS acao (nome varchar(30) primary key, 
 	descricao varchar(50)) 

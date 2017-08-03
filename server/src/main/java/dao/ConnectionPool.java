@@ -13,24 +13,12 @@ public class ConnectionPool {
 
 	public ConnectionPool() {
 		MysqlDataSource pool = new MysqlDataSource();
-		pool.setUrl("jdbc:mysql://127.0.0.1:3306/inticdb");
-		pool.setUser("intic");
-		pool.setPassword("intic");
+		pool.setUrl("jdbc:mysql://127.0.0.1:3306/jusawaydb");
+		pool.setUser("jusaway");
+		pool.setPassword("jusaway");
 		this.dataSource = pool;
 	}
 	
-//	public ConnectionPool(String url) {
-//		PGPoolingDataSource pool = new PGPoolingDataSource();
-//		
-//		pool.setServerName("localhost");
-//		pool.setPortNumber(5432);
-//		pool.setDatabaseName("inticdb");
-//		pool.setUser("postgres");
-//		pool.setPassword("postgres");
-//		
-//		this.dataSource = pool;
-//	}
-
 	/**
 	 * 
 	 * @throws SQLException
