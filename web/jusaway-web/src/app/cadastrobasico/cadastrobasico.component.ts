@@ -7,7 +7,9 @@ import { Component } from '@angular/core';
 })
 
 // Obrigatório o Component com o nome do arquivo para usar no app-routing
-export class CadastrobasicoComponent { }
+export class CadastrobasicoComponent {
+  title = 'Dashboard';
+}
 
 export class AcaoComponent {
   title = 'Ação';
