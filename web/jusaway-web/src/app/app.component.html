@@ -1,4 +1,4 @@
-<div style="text-align:center">
+<div>
 
   <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText"
@@ -6,8 +6,8 @@
     <span class="navbar-toggler-icon"></span>
   </button>
     <a class="navbar-brand" href="index.html">
-                <img src="assets/brand.svg" width="30" height="30" class="d-inline-block align-top" alt=""> JusAway
-            </a>
+      <img src="assets/brand.svg" width="30" height="30" class="d-inline-block align-top" alt=""> JusAway
+    </a>
     <div class="collapse navbar-collapse" id="navbarText">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
@@ -17,7 +17,7 @@
           <a class="nav-link" href="ajuda.html">Ajuda</a>
         </li>
       </ul>
-      <span class="navbar-text"> Fillipe Lima </span>
+      <span class="navbar-text"> Nome Usuário </span>
     </div>
   </nav>
 
@@ -25,13 +25,17 @@
 
     <!-- Cadastro -->
     <div class="btn-group">
-      <button type="button" class="btn btn-primary">Cadastro</button>
+      <button type="button" class="btn btn-primary">Cadastros</button>
       <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true"
         aria-expanded="false">
         <span class="sr-only">Toggle Dropdown</span>
     </button>
       <div class="dropdown-menu">
-        <a class="dropdown-item" href="processo.html">Processo</a>
+        <a class="dropdown-item" routerLink="processo" routerLinkActive="active">Processo</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" routerLink="advogado" routerLinkActive="active">Advogado</a>
+        <a class="dropdown-item" routerLink="cliente" routerLinkActive="active">Cliente</a>
+        <div class="dropdown-divider"></div>
       </div>
     </div>
 
@@ -69,5 +73,7 @@
 
   </div>
   <!-- fim botões menu -->
+
+  <router-outlet></router-outlet>
 
 </div>

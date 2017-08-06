@@ -1,0 +1,25 @@
+<form #formCliente="ngForm" (ngSubmit)="onSubmit(f)" novalidate>
+
+  <fieldset class="form-group">
+    <legend>Tipo de Pessoa</legend>
+    <div class="form-check">
+      <label class="form-check-label">
+        <input type="radio" class="form-check-input" name="tipoCliente" id="fisico" value="pf" [(ngModel)]="tipo">
+        Pessoa Física
+      </label>
+      <label class="form-check-label">
+        <input type="radio" class="form-check-input" name="tipoCliente" id="juridico" value="pj" [(ngModel)]="tipo">
+        Pessoa Jurídica
+      </label>
+    </div>
+  </fieldset>
+
+  <div *ngIf="tipo == 'pf'">
+    <p>Cliente Fisico</p>
+  </div>
+
+  <div *ngIf="tipo == 'pj'">
+    <p> Cliente Jurídico</p>
+  </div>
+
+</form>
