@@ -12,6 +12,9 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { ProcessoComponent } from './processo/processo.component';
 import { ClienteComponent } from './cliente/cliente.component';
 import { AdvogadoComponent } from './advogado/advogado.component';
+import { CadastrobasicoComponent } from './cadastrobasico/cadastrobasico.component';
+import { AcaoComponent } from './cadastrobasico/acao/acao.component';
+
 
 @NgModule({
   imports: [
@@ -27,7 +30,9 @@ import { AdvogadoComponent } from './advogado/advogado.component';
     ProcessoComponent,
     DashboardComponent,
     ClienteComponent,
-    AdvogadoComponent
+    AdvogadoComponent,
+    CadastrobasicoComponent,
+    AcaoComponent
   ],
   providers: [  ],
   bootstrap: [ AppComponent ]

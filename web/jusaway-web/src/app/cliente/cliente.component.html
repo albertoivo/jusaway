@@ -1,4 +1,4 @@
-<form #formCliente="ngForm" (ngSubmit)="onSubmit(f)" novalidate>
+<form #formCliente="ngForm" (ngSubmit)="onSubmit(formCliente)" novalidate>
 
   <fieldset class="form-group">
     <legend>Tipo de Pessoa</legend>
@@ -14,12 +14,21 @@
     </div>
   </fieldset>
 
+  <input name="first" ngModel required #first="ngModel">
+  <input name="last" ngModel >
+
+  <p>First name value: {{ first.value }}</p>
+  <p>First name valid: {{ first.valid }}</p>
+  <p>Form value: {{ formCliente.value | json }}</p>
+  <p>Form valid: {{ formCliente.valid }}</p>
+  <button (click)="setValue()">Set value</button>
+
   <div *ngIf="tipo == 'pf'">
-    <p>Cliente Fisico</p>
+    <p>Cliente Físico</p>
   </div>
 
   <div *ngIf="tipo == 'pj'">
-    <p> Cliente Jurídico</p>
+    <p>Cliente Jurídico</p>
   </div>
 
 </form>

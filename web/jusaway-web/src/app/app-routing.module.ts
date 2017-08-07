@@ -1,3 +1,5 @@
+import { AcaoComponent } from './cadastrobasico/acao/acao.component';
+import { CadastrobasicoComponent } from './cadastrobasico/cadastrobasico.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { AdvogadoComponent } from './advogado/advogado.component';
 import { ClienteComponent } from './cliente/cliente.component';
@@ -14,6 +16,9 @@ const routes: Routes = [
   { path: 'cliente', component: ClienteComponent },
 
   { path: 'processo', component: ProcessoComponent },
+
+  { path: 'cadastroBasico', component: CadastrobasicoComponent },
+  { path: 'acao', component: AcaoComponent}
 ];
 
 @NgModule({
