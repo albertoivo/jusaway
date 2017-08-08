@@ -5,8 +5,8 @@ import { HttpModule } from '@angular/http';
 import { NgIf } from '@angular/common';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
-
+import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+import { CdkTableModule, DataSource } from '@angular/cdk';
 import {
   MdAutocompleteModule,
   MdButtonModule,
@@ -40,7 +40,6 @@ import {
   MdToolbarModule,
   MdTooltipModule,
 } from '@angular/material';
-import { CdkTableModule, DataSource } from '@angular/cdk';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';

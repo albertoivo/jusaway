@@ -25,36 +25,29 @@
         <div class="centro">
             <button md-button>Cadastrar</button>
             <button md-button>Alterar</button>
-            <button md-button routerLink="/dashboard">Cancelar</button>
             <button md-button type="reset">Limpar</button>
+            <button md-button routerLink="/dashboard">Cancelar</button>
         </div>
         <br clear="all" />
-        <div class="example-container mat-elevation-z8">
-            <div class="example-header">
+        <div class="amd-container mat-elevation-z8">
+            <div class="amd-header">
                 <md-input-container floatPlaceholder="never">
                     <input mdInput #filter placeholder="Filtro">
                 </md-input-container>
             </div>
             <md-table #table>
-                <!-- ID Column -->
                 <ng-container cdkColumnDef="nome">
                     <md-header-cell *cdkHeaderCellDef> Nome </md-header-cell>
                     <md-cell *cdkCellDef="let row"> </md-cell>
                 </ng-container>
-
-                <!-- Progress Column -->
                 <ng-container cdkColumnDef="descricao">
                     <md-header-cell *cdkHeaderCellDef> Descrição </md-header-cell>
                     <md-cell *cdkCellDef="let row"> </md-cell>
                 </ng-container>
-
-                <!-- Name Column -->
                 <ng-container cdkColumnDef="acao">
                     <md-header-cell *cdkHeaderCellDef> Ação </md-header-cell>
                     <md-cell *cdkCellDef="let row"> </md-cell>
                 </ng-container>
-
-                <!-- Color Column -->
                 <ng-container cdkColumnDef="color">
                     <md-header-cell *cdkHeaderCellDef>Color</md-header-cell>
                     <md-cell>
@@ -62,7 +55,6 @@
                         <a href="#"><img src="assets/remove.svg" width="20" height="20" alt="Remover" /></a>
                     </md-cell>
                 </ng-container>
-
                 <md-header-row *cdkHeaderRowDef="displayedColumns"></md-header-row>
                 <md-row *cdkRowDef="let row; columns: displayedColumns;"></md-row>
             </md-table>
