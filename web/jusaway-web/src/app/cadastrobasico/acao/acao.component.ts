@@ -8,6 +8,7 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 })
 
 export class AcaoComponent implements OnInit {
+    title = 'Ação';
     formAcao = new FormGroup({});
     displayedColumns = ['nome', 'descricao', 'acao'];
     @ViewChild('filter') filter: ElementRef;
