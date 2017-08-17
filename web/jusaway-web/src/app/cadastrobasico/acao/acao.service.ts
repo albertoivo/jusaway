@@ -15,10 +15,13 @@ export class AcaoService {
     constructor(private http: Http) { }
 
     getAcoes(): Observable<Acao[]> {
-        return this.http.get(this.acoesUrl).map(res => {
-            const retorno = res.json();
-            return retorno.data || {};
-        });
+        /*        return this.http.get(this.acoesUrl).map(res => {
+                    const retorno = res.json();
+                    return retorno.data || {};
+                });*/
+        return this.http
+            .get(this.acoesUrl)
+            .map(response => response.json().data as Acao[]);
     }
 
 }

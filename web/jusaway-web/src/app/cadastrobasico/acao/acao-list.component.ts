@@ -4,15 +4,7 @@ import { OnInit, Component } from '@angular/core';
 
 @Component({
   selector: 'app-acao-list',
-  template: `
-    <div>
-      <a *ngFor="let acao of lista">
-        <div>
-          <h4>{{acao.nome}}</h4>
-        </div>
-      </a>
-    </div>
-  `,
+  templateUrl: 'acao-list.component.html',
   styleUrls: ['../../app.component.css']
 })
 

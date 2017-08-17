@@ -1,0 +1,39 @@
+<h3>Listagem de Ações</h3>
+<ul>
+    <li *ngFor="let acao of list">
+        <span>{{acao.nome}}</span>
+    </li>
+</ul>
+
+<!-- div class="amd-container mat-elevation-z8">
+            <div class="amd-header">
+                <md-input-container floatPlaceholder="never">
+                    <input mdInput #filter placeholder="Filtro">
+                </md-input-container>
+            </div>
+            <md-table #table>
+                <ng-container cdkColumnDef="nome">
+                    <md-header-cell *cdkHeaderCellDef> Nome </md-header-cell>
+                    <md-cell *cdkCellDef="let row"> </md-cell>
+                </ng-container>
+                <ng-container cdkColumnDef="descricao">
+                    <md-header-cell *cdkHeaderCellDef> Descrição </md-header-cell>
+                    <md-cell *cdkCellDef="let row"> </md-cell>
+                </ng-container>
+                <ng-container cdkColumnDef="acao">
+                    <md-header-cell *cdkHeaderCellDef> Ação </md-header-cell>
+                    <md-cell *cdkCellDef="let row"> </md-cell>
+                </ng-container>
+                <ng-container cdkColumnDef="color">
+                    <md-header-cell *cdkHeaderCellDef>Color</md-header-cell>
+                    <md-cell>
+                        <a href="#"><img src="assets/edit.svg" width="20" height="20" alt="Alterar" /></a>
+                        <a href="#"><img src="assets/remove.svg" width="20" height="20" alt="Remover" /></a>
+                    </md-cell>
+                </ng-container>
+                <md-header-row *cdkHeaderRowDef="displayedColumns"></md-header-row>
+                <md-row *cdkRowDef="let row; columns: displayedColumns;"></md-row>
+            </md-table>
+            <md-paginator #paginator [length]="100" [pageIndex]="0" [pageSize]="10" [pageSizeOptions]="[5, 10, 20, 30]">
+            </md-paginator>
+        </div -->
