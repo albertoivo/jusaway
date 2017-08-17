@@ -10,13 +10,12 @@ import { Acao } from './acao';
 export class AcaoService {
 
     private headers = new Headers({ 'Content-Type': 'application/json' });
-    private acoesUrl = 'acoes';  // URL to web api
+    private acoesUrl = 'http://localhost:8080/acoes';  // URL to web api
 
     constructor(private http: Http) { }
 
     getAcoes(): Observable<Acao[]> {
-        return this.http.get(this.acoesUrl)
-            .map(res => res.json());
+        return this.http.get(this.acoesUrl).map(res => res.json());
     }
 
 }

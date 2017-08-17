@@ -1,6 +1,9 @@
 import { Component, ElementRef, ViewChild, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 
+import { AcaoService } from './acao.service';
+import { Acao } from './acao';
+
 @Component({
     selector: 'app-acao',
     templateUrl: './acao.component.html',
