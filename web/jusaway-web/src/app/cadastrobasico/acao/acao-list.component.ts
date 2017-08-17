@@ -4,8 +4,16 @@ import { OnInit, Component } from '@angular/core';
 
 @Component({
   selector: 'app-acao-list',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  template: `
+    <div>
+      <a *ngFor="let acao of acoes" >
+        <div>
+          <h4>{{acao.nome}}</h4>
+        </div>
+      </a>
+    </div>
+  `,
+  styleUrls: ['../../app.component.css']
 })
 
 export class AcaoListComponent implements OnInit {
