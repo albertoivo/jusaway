@@ -101,7 +101,7 @@ import { AcaoComponent } from './cadastrobasico/acao/acao.component';
     CadastrobasicoComponent,
     AcaoComponent
   ],
-  providers: [],
+  providers: [AppComponent],
   bootstrap: [AppComponent]
 })
 
