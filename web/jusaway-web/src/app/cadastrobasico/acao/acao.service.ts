@@ -15,7 +15,10 @@ export class AcaoService {
     constructor(private http: Http) { }
 
     getAcoes(): Observable<Acao[]> {
-        return this.http.get(this.acoesUrl).map(res => res.json());
+        return this.http.get(this.acoesUrl).map(res => {
+            const retorno = res.json();
+            return retorno.data || {};
+        });
     }
 
 }

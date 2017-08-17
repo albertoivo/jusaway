@@ -1,5 +1,3 @@
-import { AcaoListComponent } from './cadastrobasico/acao/acao-list.component';
-import { AcaoService } from './cadastrobasico/acao/acao.service';
 import 'hammerjs';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -51,6 +49,8 @@ import { ClienteComponent } from './cliente/cliente.component';
 import { AdvogadoComponent } from './advogado/advogado.component';
 import { CadastrobasicoComponent } from './cadastrobasico/cadastrobasico.component';
 import { AcaoComponent } from './cadastrobasico/acao/acao.component';
+import { AcaoListComponent } from './cadastrobasico/acao/acao-list.component';
+import { AcaoService } from './cadastrobasico/acao/acao.service';
 
 
 @NgModule({
@@ -104,7 +104,7 @@ import { AcaoComponent } from './cadastrobasico/acao/acao.component';
     AcaoComponent,
     AcaoListComponent
   ],
-  providers: [AppComponent, AcaoService],
+  providers: [AcaoService],
   bootstrap: [AppComponent]
 })
 

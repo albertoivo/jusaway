@@ -6,7 +6,7 @@ import { OnInit, Component } from '@angular/core';
   selector: 'app-acao-list',
   template: `
     <div>
-      <a *ngFor="let acao of acoes" >
+      <a *ngFor="let acao of lista">
         <div>
           <h4>{{acao.nome}}</h4>
         </div>
@@ -17,13 +17,13 @@ import { OnInit, Component } from '@angular/core';
 })
 
 export class AcaoListComponent implements OnInit {
-  acoes: Acao[] = [];
+  lista: Acao[] = [];
 
   constructor(private acaoService: AcaoService) { }
 
   ngOnInit(): void {
     this.acaoService.getAcoes()
-      .map(acoes => this.acoes = acoes.slice(1, 5));
+      .map(acoes => this.lista = acoes.slice(1, 10));
   }
 
 }
