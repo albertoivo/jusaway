@@ -22,6 +22,14 @@ export class AcaoListComponent implements OnInit {
 
   ngOnInit(): void {
     this.getAcoes();
+/*
+    this.acoes = [
+      { nome: 'acao 1', descricao: 'desc 1' },
+      { nome: 'acao 2', descricao: 'desc 2' },
+      { nome: 'acao 3', descricao: 'desc 3' },
+      { nome: 'acao 4', descricao: 'desc 4' }
+    ];
+*/
   }
 
 }

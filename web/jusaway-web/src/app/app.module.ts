@@ -52,7 +52,6 @@ import { AcaoComponent } from './cadastrobasico/acao/acao.component';
 import { AcaoListComponent } from './cadastrobasico/acao/acao-list.component';
 import { AcaoService } from './cadastrobasico/acao/acao.service';
 
-
 @NgModule({
   imports: [
     BrowserModule,
