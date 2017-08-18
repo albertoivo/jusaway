@@ -104,8 +104,12 @@ import { AcaoService } from './cadastrobasico/acao/acao.service';
     AcaoComponent,
     AcaoListComponent
   ],
-  providers: [AcaoService],
-  bootstrap: [AppComponent]
+  providers: [
+    AcaoService
+  ],
+  bootstrap: [
+    AppComponent
+  ]
 })
 
 export class AppModule { }

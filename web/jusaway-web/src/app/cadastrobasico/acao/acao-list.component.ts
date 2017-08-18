@@ -1,6 +1,6 @@
+import { OnInit, Component } from '@angular/core';
 import { AcaoService } from './acao.service';
 import { Acao } from './acao';
-import { OnInit, Component } from '@angular/core';
 
 @Component({
   selector: 'app-acao-list',
@@ -9,13 +9,19 @@ import { OnInit, Component } from '@angular/core';
 })
 
 export class AcaoListComponent implements OnInit {
-  lista: Acao[] = [];
+
+  acoes: Acao[];
 
   constructor(private acaoService: AcaoService) { }
 
+  getAcoes(): void {
+    this.acaoService
+      .getAcoes()
+      .then(acoes => this.acoes = acoes);
+  }
+
   ngOnInit(): void {
-    this.acaoService.getAcoes()
-      .map(acoes => this.lista = acoes.slice(1, 10));
+    this.getAcoes();
   }
 
 }
