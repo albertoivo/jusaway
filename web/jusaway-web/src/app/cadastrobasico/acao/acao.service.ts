@@ -1,4 +1,4 @@
-import { Headers, Http } from '@angular/http';
+import { Http, Response, RequestOptions, Headers } from '@angular/http';
 import { Injectable } from '@angular/core';
 import { Acao } from './acao';
 import 'rxjs/add/operator/toPromise';
@@ -7,12 +7,14 @@ import 'rxjs/add/operator/toPromise';
 export class AcaoService {
 
     private headers = new Headers({ 'Content-Type': 'application/json' });
+    private options = new RequestOptions({ headers: this.headers });
+
     private acoesUrl = 'http://localhost:8080/acoes';
 
     constructor(private http: Http) { }
 
     getAcoes(): Promise<Acao[]> {
-        return this.http.get(this.acoesUrl)
+        return this.http.get(this.acoesUrl, this.options)
             .toPromise()
             .then(response => response.json().data as Acao[])
             .catch(this.handleError);
