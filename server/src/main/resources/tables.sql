@@ -2,9 +2,7 @@ CREATE DATABASE IF NOT EXISTS jusawaydb DEFAULT CHARACTER SET = utf8;
 
 USE jusawaydb;
 
-CREATE TABLE IF NOT EXISTS acao (nome varchar(30) primary key, 
-	descricao varchar(50)) 
-	DEFAULT CHARACTER SET = utf8;
+CREATE TABLE IF NOT EXISTS acao (nome varchar(30) primary key, descricao varchar(50)) DEFAULT CHARACTER SET = utf8;
 
 CREATE TABLE IF NOT EXISTS area (nome varchar(30) primary key, descricao varchar(50)) DEFAULT CHARACTER SET = utf8;
 
